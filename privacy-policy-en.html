@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Growing From Within (meitalAI)</title>
+  <meta name="description" content="Privacy Policy for Growing From Within (meitalAI) - How we collect, use, and protect your information">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #334155;
+      background: linear-gradient(to bottom right, #f8fafc, #ffffff, #f8fafc);
+      min-height: 100vh;
+    }
+    header {
+      border-bottom: 1px solid rgba(226, 232, 240, 0.3);
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    nav {
+      max-width: 72rem;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: inherit;
+    }
+    .logo-link img {
+      height: 2.5rem;
+      width: auto;
+      object-fit: contain;
+    }
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #1e293b;
+    }
+    .back-link {
+      border-radius: 9999px;
+      border: 1px solid #cbd5e1;
+      background: white;
+      padding: 0.5rem 1.25rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #475569;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .back-link:hover {
+      background: #f8fafc;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    main {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      color: #0f172a;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0f172a;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.75;
+      color: #475569;
+    }
+    ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      list-style: none;
+    }
+    li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: start;
+      gap: 0.5rem;
+    }
+    li .bullet {
+      color: #0d9488;
+      margin-top: 0.25rem;
+    }
+    li .bullet-red {
+      color: #dc2626;
+    }
+    a {
+      color: #0d9488;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #0f766e;
+    }
+    strong {
+      font-weight: 600;
+      color: #1e293b;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    .info-box {
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .info-box-teal {
+      border: 1px solid #99f6e4;
+      background: rgba(240, 253, 250, 0.5);
+    }
+    .info-box-teal p {
+      color: #134e4a;
+    }
+    .info-box-teal strong {
+      color: #134e4a;
+    }
+    .info-box-red {
+      border: 1px solid #fecaca;
+      background: rgba(254, 242, 242, 0.5);
+    }
+    .info-box-red p {
+      color: #991b1b;
+    }
+    .info-box-red strong {
+      color: #991b1b;
+    }
+    .info-box-slate {
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+    }
+    .info-box-slate p {
+      color: #475569;
+      font-size: 0.875rem;
+    }
+    .contact-box {
+      border-radius: 0.5rem;
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .contact-box p {
+      margin-bottom: 0.5rem;
+    }
+    .last-updated {
+      font-size: 1.125rem;
+      color: #64748b;
+    }
+    .footer-link {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e2e8f0;
+    }
+    .footer-link a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 9999px;
+      border: 2px solid #cbd5e1;
+      background: white;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      color: #475569;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .footer-link a:hover {
+      background: #f8fafc;
+      border-color: #94a3b8;
+    }
+    @media (max-width: 640px) {
+      .logo-text {
+        display: none;
+      }
+      h1 {
+        font-size: 1.875rem;
+      }
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo-link">
+        <img src="/logo-meital.png" alt="Meital Danieli">
+        <span class="logo-text">Growing From Within</span>
+      </a>
+      <a href="/" class="back-link">Back to Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <div style="margin-bottom: 2rem;">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: <span id="last-updated"></span></p>
+    </div>
+
+    <!-- Section 1: Introduction -->
+    <section>
+      <h2>1. Introduction</h2>
+      <p>
+        At "Growing From Within" (meitalAI), we are committed to protecting your privacy and respecting your rights. This privacy policy explains in detail how we collect, use, store, and protect your personal information in accordance with the European Data Protection Regulations (GDPR), the Israeli Privacy Protection Law 5741-1981, and the regulations enacted thereunder.
+      </p>
+      <p>
+        By using our platform, you agree to the collection and use of your information as described in this policy. If you do not agree to this policy, please do not use the platform.
+      </p>
+      <p>
+        <strong>About us:</strong> Growing From Within (meitalAI) is a digital platform that provides personalized guidance services to people at professional crossroads. We operate under Israeli law and are committed to complying with all relevant data protection regulations.
+      </p>
+    </section>
+
+    <!-- Section 2: What Information We Collect -->
+    <section>
+      <h2>2. What Information We Collect</h2>
+      <p>
+        We collect the following information to provide you with a personalized service:
+      </p>
+
+      <h3>2.1. Basic Identity Information</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Full name:</strong> First and last name (as provided during registration)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Email address:</strong> Used for identification, login, and communication (via Supabase Auth)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Registration date:</strong> For account management and support</span>
+        </li>
+      </ul>
+
+      <h3>2.2. Diagnosis Information</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Diagnosis questionnaire answers:</strong> All answers you provided in the diagnosis questionnaire (25-30 questions), including text responses, multiple choice selections, and scale ratings</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Diagnosis results:</strong> Scores across different dimensions (such as: burnout, fears, motivation, attitude toward change), dominant categories, and automated analyses</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Personal report:</strong> A report generated based on your diagnosis, including insights and recommendations</span>
+        </li>
+      </ul>
+
+      <h3>2.3. Journey Information</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Daily reflections:</strong> All text you wrote as part of reflections in the 7-day journey</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Action outputs:</strong> Files you uploaded (such as images, documents), comments on actions, and any other content you shared as part of tasks</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Progress tracking:</strong> Which days were completed, which actions were performed, and overall progress status</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>AI feedback:</strong> Automated analyses of your reflections and outputs, including insights and recommendations generated by AI systems</span>
+        </li>
+      </ul>
+
+      <h3>2.4. Professional Information (Optional)</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Resume:</strong> If you uploaded a resume file (PDF, DOC, DOCX), we store the file and process it using AI to extract relevant professional information</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>LinkedIn link:</strong> If you provided a link to your LinkedIn profile, we store the link (not the content of the profile, only the link)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Professional background:</strong> Information extracted from resumes or LinkedIn (such as: previous roles, areas of expertise, years of experience) - used to tailor responses and content</span>
+        </li>
+      </ul>
+
+      <h3>2.5. Conversations with Meital-Bot</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>User messages:</strong> All text you sent in conversations with Meital-bot</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Bot responses:</strong> All responses you received from Meital-bot</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Conversation history:</strong> All conversations are saved to enable continuity and context between conversations</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Conversation summaries:</strong> Automated summaries of previous conversations created to provide context to the bot</span>
+        </li>
+      </ul>
+
+      <h3>2.6. Technical Information and Logs</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>IP address:</strong> Stored for security, identifying suspicious activity, and technical support</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Browser information:</strong> Browser type, version, operating system (for technical support and issue identification)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Technical logs:</strong> Records of technical operations, errors, and system activity (without personal content)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Cookies:</strong> Only technical cookies for maintaining login session and preferences (not tracking cookies)</span>
+        </li>
+      </ul>
+
+      <div class="info-box info-box-teal">
+        <p><strong>Important note:</strong></p>
+        <p>
+          We do <strong>not</strong> collect sensitive information such as ID numbers, credit card details, or detailed medical information. All information we collect is relevant only to the service we provide.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: Why We Collect Information -->
+    <section>
+      <h2>3. Why We Collect Information (Processing Purposes)</h2>
+      <p>
+        We use your information only for the following purposes, in accordance with the legal basis for processing personal information:
+      </p>
+
+      <h3>3.1. Contract Performance and Service Delivery</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Creating personalized diagnosis:</strong> Processing your questionnaire answers to create an accurate and personalized diagnosis</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Creating personal report:</strong> Using diagnosis information to create a detailed report with insights and recommendations</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Personalized work journey:</strong> Adapting content and actions in the 7-day journey according to your findings and status</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Conversations with Meital-bot:</strong> Using your information to provide tailored, relevant, and accurate responses</span>
+        </li>
+      </ul>
+
+      <h3>3.2. Service Improvement and Enhancement</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Personalization:</strong> Using your information to tailor content, questions, and responses personally (only within the platform)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>AI analysis:</strong> Processing your reflections and outputs using AI to provide feedback, insights, and tailored recommendations</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Progress tracking:</strong> Tracking your progress in the journey to provide a continuous and ongoing experience</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Algorithm improvement:</strong> Using anonymous information (without personal identification) to improve our algorithms and models</span>
+        </li>
+      </ul>
+
+      <h3>3.3. Technical Support and Security</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Account identification and management:</strong> Using identity information to enable login, identification, and account management</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Security:</strong> Using technical information (such as IP) to identify suspicious activity, prevent fraud, and protect your account</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Technical support:</strong> Using logs and technical information to resolve issues, improve performance, and provide support</span>
+        </li>
+      </ul>
+
+      <h3>3.4. Legal Obligations</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Record keeping:</strong> Maintaining records as required by Israeli law and GDPR regulations</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Legal compliance:</strong> Complying with legal obligations, including providing information to authorities if required by law</span>
+        </li>
+      </ul>
+
+      <div class="info-box info-box-teal">
+        <p><strong>⚠️ What we do <strong>not</strong> do with your information:</strong></p>
+        <ul style="margin-top: 0.5rem;">
+          <li>• <strong>Do not</strong> sell or transfer information to external parties</li>
+          <li>• <strong>Do not</strong> use information for advertising or marketing</li>
+          <li>• <strong>Do not</strong> share information with advertising companies or data distributors</li>
+          <li>• <strong>Do not</strong> use tracking cookies or technologies to track you outside the platform</li>
+          <li>• <strong>Do not</strong> use information for purposes unrelated to the service we provide</li>
+        </ul>
+        <p style="margin-top: 0.75rem; font-weight: 600;">
+          Your information remains within our platform only and is used only for the purposes listed above.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 4: How We Store Information -->
+    <section>
+      <h2>4. How We Store Information</h2>
+      <p>
+        We use secure and professional services to store your information, ensuring maximum security:
+      </p>
+
+      <h3>4.1. Data Storage</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Database:</strong> PostgreSQL via Supabase (secure cloud service). All information is encrypted at rest and in transit</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Backups:</strong> Automatic daily backups are kept for a limited period for recovery in case of failure</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Location:</strong> Information is stored on Supabase servers (secure regions, usually in Europe or the US, according to Supabase's selection)</span>
+        </li>
+      </ul>
+
+      <h3>4.2. File Storage</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Supabase Storage:</strong> Files you uploaded (such as resumes) are stored in Supabase Storage</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Private Bucket:</strong> Files are stored in a private bucket - only you (through your account) can access them</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Access restrictions:</strong> Even we cannot access your files directly - only through a secure permissions system</span>
+        </li>
+      </ul>
+
+      <h3>4.3. Security Measures</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Encryption:</strong> All information is encrypted at rest and in transit (TLS/SSL)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Limited access:</strong> Only authorized employees with required permissions can access information, and only for technical support</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Authentication:</strong> All access to information requires strong authentication (via Supabase Auth)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Security updates:</strong> We regularly update the system to address new threats</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Monitoring:</strong> We regularly monitor the system to identify suspicious activity</span>
+        </li>
+      </ul>
+
+      <h3>4.4. Data Retention Period</h3>
+      <p>
+        Your information is stored as long as you use the platform. If you choose to delete your account, we will delete your information within 30 days (except information we are required to retain by law).
+      </p>
+      <p>
+        <strong>Exceptions:</strong> In certain cases, we may retain limited information for a longer period if required by law or if there is suspicion of illegal activity.
+      </p>
+
+      <div class="info-box info-box-slate">
+        <p>
+          <strong>Note:</strong> Although we take all reasonable measures to protect your information, no system is perfect. If you identify suspicious activity or a security issue, please contact us immediately.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 5: Who Can Access Information -->
+    <section>
+      <h2>5. Who Can Access Information</h2>
+      <p>
+        Your information is accessible only to the following parties, and all access is limited and controlled:
+      </p>
+
+      <h3>5.1. Your Direct Access</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Through your account:</strong> You can access all your information through your platform account</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Update and deletion:</strong> You can update or delete your information at any time (see Section 7)</span>
+        </li>
+      </ul>
+
+      <h3>5.2. Technical Support Team</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Limited access:</strong> Only authorized employees with required permissions can access information</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Purpose:</strong> Only for resolving technical issues, support, or maintenance</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Logs:</strong> All access to information is logged for tracking and security</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Training:</strong> All employees working with personal information undergo privacy and security training</span>
+        </li>
+      </ul>
+
+      <h3>5.3. External AI Services</h3>
+      <p>
+        We use external AI services to process your information and provide personalized services:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Gemini (Google):</strong> Used for generating Meital-bot responses, analyzing reflections, and processing content. Information is transferred to Google only for processing and is not stored by Google for other purposes</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Custom GPT (OpenAI):</strong> Used for processing complex information and advanced analyses. Information is transferred to OpenAI only for processing</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Restrictions:</strong> We only use AI services that commit not to use your information for other purposes (such as model training) without your explicit consent</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Security:</strong> All information transfer to AI services is done through encrypted connections (HTTPS/TLS)</span>
+        </li>
+      </ul>
+
+      <h3>5.4. Technical Service Providers</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Supabase:</strong> Database and storage service provider. Supabase cannot access your information content, only manage the technical infrastructure</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Hosting services:</strong> If we use additional hosting services, they cannot access your information content</span>
+        </li>
+      </ul>
+
+      <div class="info-box info-box-red">
+        <p><strong>⚠️ We do <strong>not</strong> sell or transfer your information:</strong></p>
+        <ul style="margin-top: 0.5rem;">
+          <li>• <strong>Do not</strong> sell information to external parties</li>
+          <li>• <strong>Do not</strong> transfer information to advertising companies or data distributors</li>
+          <li>• <strong>Do not</strong> share information with business partners for marketing purposes</li>
+          <li>• <strong>Do not</strong> use information for purposes unrelated to the service we provide</li>
+        </ul>
+        <p style="margin-top: 0.75rem; font-weight: 600;">
+          Your information remains within our platform only and is used only for the purposes stated in this policy.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 6: Your Rights (GDPR) -->
+    <section>
+      <h2>6. Your Rights (GDPR and Privacy Protection Law)</h2>
+      <p>
+        In accordance with GDPR regulations and the Israeli Privacy Protection Law 5741-1981, you have the following rights:
+      </p>
+
+      <h3>6.1. Right of Access</h3>
+      <p>
+        You can request to receive a copy of all personal information we have about you, including:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span>All information you provided (diagnosis answers, reflections, conversations)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>Information generated based on your information (reports, analyses, insights)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>Information about how your information is used</span>
+        </li>
+      </ul>
+      <p>
+        <strong>Response time:</strong> We will respond to your request within 30 days (or earlier if possible).
+      </p>
+
+      <h3>6.2. Right to Rectification</h3>
+      <p>
+        You can request to update or correct inaccurate, incomplete, or outdated information. You can update some information directly through your account, or request us to update it.
+      </p>
+
+      <h3>6.3. Right to Erasure ("Right to be Forgotten")</h3>
+      <p>
+        You can request to delete your personal information in the following situations:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span>The information is no longer necessary for the purposes for which it was collected</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>You withdraw your consent to process the information</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>The information was processed unlawfully</span>
+        </li>
+      </ul>
+      <p>
+        <strong>Exceptions:</strong> We may retain certain information if required by law or if there is a legitimate interest in retaining it (such as fraud prevention).
+      </p>
+
+      <h3>6.4. Right to Restriction</h3>
+      <p>
+        You can request to restrict the use of your information in the following situations:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span>You dispute the accuracy of the information (until we verify)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>The processing is unlawful and you prefer restriction over deletion</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>We no longer need the information, but you need it for legal claims</span>
+        </li>
+      </ul>
+
+      <h3>6.5. Right to Object</h3>
+      <p>
+        You can object to the processing of your information if the processing is based on our legitimate interest or a public purpose. If you object, we will examine the request and stop processing unless we have compelling reasons to continue.
+      </p>
+
+      <h3>6.6. Right to Data Portability</h3>
+      <p>
+        You can request to export your personal information in a structured and readable format (such as JSON or CSV), so you can transfer it to another service or save it locally.
+      </p>
+
+      <h3>6.7. Right to Withdraw Consent</h3>
+      <p>
+        If the processing of your information is based on your consent, you can withdraw consent at any time. Withdrawal of consent will not affect the lawfulness of processing done before withdrawal.
+      </p>
+
+      <h3>6.8. Right to File a Complaint</h3>
+      <p>
+        If you believe we have violated your rights, you can file a complaint with the privacy protection authority:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>In Israel:</strong> Privacy Protection Authority - <a href="https://www.gov.il/he/departments/topics/privacy" target="_blank" rel="noopener noreferrer">gov.il/privacy</a></span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>In the European Union:</strong> The data protection authority in your country</span>
+        </li>
+      </ul>
+
+      <div class="info-box info-box-teal">
+        <p><strong>How to exercise your rights:</strong></p>
+        <p>
+          To exercise your rights, contact us at: <a href="mailto:privacy@meitalai.com" style="font-weight: 600;">privacy@meitalai.com</a>
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+          We need to identify you to ensure we provide information to the right person. We will respond to your request within 30 days (or earlier if possible).
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 7: How to Delete Information -->
+    <section>
+      <h2>7. How to Delete Your Information</h2>
+      <p>
+        You can delete your information in two ways:
+      </p>
+
+      <h3>7.1. Through the Platform</h3>
+      <p>
+        Soon you will be able to delete your information directly from your account through account settings. This feature is under development and will be available soon.
+      </p>
+
+      <h3>7.2. Through Contact</h3>
+      <p>
+        Currently, the way to delete your information is to send a request to: <a href="mailto:privacy@meitalai.com" style="font-weight: 600;">privacy@meitalai.com</a>
+      </p>
+      <p>
+        In your request, please specify:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span>Your email address (to identify the account)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>Whether you want to delete all information or only part of it</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>Whether you want to delete the account completely or only part of the information</span>
+        </li>
+      </ul>
+      <p>
+        <strong>Response time:</strong> We will delete your information within 30 days from receiving the request. We will send you confirmation of deletion after completion.
+      </p>
+
+      <h3>7.3. What Gets Deleted</h3>
+      <p>
+        When you request to delete your information, we will delete:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span>All diagnosis answers</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>All reflections and outputs from the journey</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>All conversations with Meital-bot</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>Files you uploaded (resumes)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>Professional information (LinkedIn, professional background)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>Reports and analyses generated based on your information</span>
+        </li>
+      </ul>
+
+      <h3>7.4. What Does Not Get Deleted</h3>
+      <p>
+        In certain cases, we may retain limited information even after deletion:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Legal information:</strong> If required to retain certain information by law (such as accounting records)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Anonymous information:</strong> Information that has been fully anonymized and cannot be personally identified</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Backups:</strong> Backups may contain copies of information for a limited period (up to 90 days) for recovery in case of failure</span>
+        </li>
+      </ul>
+
+      <div class="info-box info-box-red">
+        <p><strong>⚠️ Important warning:</strong></p>
+        <p>
+          Deleting information is <strong>irreversible</strong>. After deletion, you will not be able to recover the diagnosis, report, conversations, or any other content. Please make sure you want to delete the information before making the request.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 8: Cookies -->
+    <section>
+      <h2>8. Cookies and Similar Technologies</h2>
+      <p>
+        We use cookies and similar technologies only for platform operation and to provide you with a tailored service:
+      </p>
+
+      <h3>8.1. Cookies We Use</h3>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Session Cookies:</strong> Used to maintain login session, so you don't need to log in again each time</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Authentication Cookies:</strong> Used to identify you and secure access to your account</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Preference Cookies:</strong> If there are saved preferences (such as language or display settings), they are stored in cookies</span>
+        </li>
+      </ul>
+
+      <h3>8.2. Cookies We Do <strong>Not</strong> Use</h3>
+      <p>
+        We <strong>do not</strong> use:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet-red">✗</span>
+          <span><strong>Tracking Cookies:</strong> Cookies to track you on other websites</span>
+        </li>
+        <li>
+          <span class="bullet-red">✗</span>
+          <span><strong>Advertising Cookies:</strong> Cookies for personalized advertising</span>
+        </li>
+        <li>
+          <span class="bullet-red">✗</span>
+          <span><strong>Analytics Cookies:</strong> Cookies to track behavior for marketing purposes</span>
+        </li>
+        <li>
+          <span class="bullet-red">✗</span>
+          <span><strong>Third-party Cookies:</strong> Third-party cookies for other purposes</span>
+        </li>
+      </ul>
+
+      <h3>8.3. How to Control Cookies</h3>
+      <p>
+        You can control cookies through your browser settings:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Delete Cookies:</strong> You can delete existing cookies through browser settings</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Block Cookies:</strong> You can block cookies, but this may affect platform functionality</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span><strong>Private Mode:</strong> Using private mode (Incognito/Private) prevents saving cookies, but you'll need to log in again each time</span>
+        </li>
+      </ul>
+
+      <div class="info-box info-box-slate">
+        <p>
+          <strong>Note:</strong> If you choose to delete or block our cookies, some platform features may not work properly, including login and saving preferences.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 9: Policy Changes -->
+    <section>
+      <h2>9. Changes to Privacy Policy</h2>
+      <p>
+        We may update the privacy policy from time to time to reflect changes in our services, regulations, or practices. Any changes will be published on this page with the update date.
+      </p>
+
+      <h3>9.1. Notification of Changes</h3>
+      <p>
+        If we update the privacy policy significantly (such as changes in processing purposes or sharing information with new parties), we will:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span>Send you an email notification (if you have a registered email address)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>Display a prominent message on the platform</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>Update the "Last updated" date at the top of the page</span>
+        </li>
+      </ul>
+
+      <h3>9.2. Continued Use</h3>
+      <p>
+        Continued use of the platform after publication of changes constitutes agreement to the updated policy. If you do not agree to the changes, you can stop using the platform and delete your information (see Section 7).
+      </p>
+
+      <h3>9.3. Previous Versions</h3>
+      <p>
+        We will keep copies of previous versions of the privacy policy for a limited period, so you can see what changed. If you want to see a previous version, contact us.
+      </p>
+    </section>
+
+    <!-- Section 10: Contact -->
+    <section>
+      <h2>10. Contact</h2>
+      <p>
+        If you have questions, requests, or concerns about the privacy policy or your information, we are here to help. Contact us in any of the following ways:
+      </p>
+
+      <h3>10.1. Contact Details</h3>
+      <div class="contact-box">
+        <p style="font-weight: 600; font-size: 1.125rem; margin-bottom: 1rem;">Growing From Within (meitalAI)</p>
+        <p>
+          <strong>Privacy email:</strong> <a href="mailto:privacy@meitalai.com" style="font-weight: 600;">privacy@meitalai.com</a>
+        </p>
+        <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.75rem;">
+          Please send your request to this address and specify the details of your request (access, correction, deletion, etc.). We will respond to your request within 30 days.
+        </p>
+      </div>
+
+      <h3>10.2. What to Include in Request</h3>
+      <p>
+        To help you best, please include in your request:
+      </p>
+      <ul>
+        <li>
+          <span class="bullet">•</span>
+          <span>Your email address (to identify the account)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>A clear description of your request (access, correction, deletion, etc.)</span>
+        </li>
+        <li>
+          <span class="bullet">•</span>
+          <span>Additional details that can help us respond to the request</span>
+        </li>
+      </ul>
+
+      <h3>10.3. Response Time</h3>
+      <p>
+        We commit to responding to all requests within 30 days of receipt. If the request is complex or requires additional time, we will notify you and update you on progress.
+      </p>
+
+      <h3>10.4. Identity Verification</h3>
+      <p>
+        To protect your privacy, we will require identity verification before providing information or performing actions on your information. This is done to prevent unauthorized access to your personal information.
+      </p>
+    </section>
+
+    <div class="footer-link">
+      <a href="/">
+        Back to Home
+        <svg style="width: 1.25rem; height: 1.25rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </main>
+
+  <script>
+    // Set last updated date
+    document.getElementById('last-updated').textContent = new Date().toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    });
+  </script>
+</body>
+</html>
