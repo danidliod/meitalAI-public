@@ -1,0 +1,24 @@
+name: fetch-footage
+on:
+  push:
+    branches: [tmp-cafe-footage]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: download and trim
+        run: |
+          mkdir -p footage
+          while read name url; do
+            [ -z "$name" ] && continue
+            curl -sSL -A "Mozilla/5.0" -o raw.mp4 "$url" || { echo "fail $name"; continue; }
+            ffmpeg -loglevel error -y -i raw.mp4 -t 10 -an -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30" -c:v libx264 -crf 24 -preset veryfast -pix_fmt yuv420p footage/$name.mp4 || echo "ffmpeg fail $name"
+          done < footage-list.txt
+          ls -la footage
+      - run: |
+          git config user.name "footage-bot"; git config user.email "bot@users.noreply.github.com"
+          git add footage && git commit -m "temp footage" && git push
